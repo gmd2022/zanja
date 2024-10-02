@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Zanjabela - Product Listing Page</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="styles.css">
+
+<!--
+
+
+
+-->
+    </head>
+    
+    <body>
+   
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" style="width: 200px;height: 100px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="products.html">Trips </a></li>
+                            <li class="scroll-to-section"><a href="visa.html">Libyan Visa</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+          
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- ***** Products Area Starts ***** -->
+    <section  style="margin-top: 50px;" class="section" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>All Trips</h2>
+                        <span>Check out all Trips.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb" >
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(1)"><i class="fa fa-eye"></i></a></li>        
+                                    <li><a href="#" ></a>><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/gadm.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Gadames city</h4>
+                            <span>$120.00</span>
+                            
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                   
+<!-- Modal Structure -->
+<div  id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1 style="margin-top: 20px;" id="product-name"></h1>
+        <img id="product-image" src="" alt="" style="width: 100%;margin-top: 25px;">
+        <div id="product-image-gallery" style="display: flex; gap: 20px;margin-top: 20px;">
+            <!-- Dynamic image thumbnails will be inserted here -->
+        </div>
+        <p style="margin-top: 20px;"   id="product-price"></p>
+        <p style="margin-top: 20px; margin-bottom: 30px;"   id="product-description"></p>
+        <button style="background-color:black; color:white;">Book Now </button>
+    </div>
+</div>
+
+
+               
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(9)"><i class="fa fa-eye"></i></a></li>
+                                   
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/redCastle.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>explore Tripoli </h4>
+                            <span>$15.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#"onclick="openModal(2)"><i class="fa fa-eye"></i></a></li>
+                                    
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/Leptis-Magna.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Lepdus Magna</h4>
+                            <span>$60.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(8)"><i class="fa fa-eye"></i></a></li>
+                                   
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/desert.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Om alma Lake </h4>
+                            <span>$100.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;"class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(8)"><i class="fa fa-eye"></i></a></li>
+                                  
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/waw2.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Waw Elnamoos</h4>
+                            <span>$100.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#"onclick="openModal(7)" ><i class="fa fa-eye"></i></a></li>
+                                
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/kabaw.png" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Kabaw castle </h4>
+                            <span>$80.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div  style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(8)"><i class="fa fa-eye"></i></a></li>
+                                    
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/rock.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Akakus Painting</h4>
+                            <span>$150.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#"onclick="openModal(4)"><i class="fa fa-eye"></i></a></li>
+                                  
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/wor.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>German World war 2 Cemetery</h4>
+                            <span>100$</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(10)"><i class="fa fa-eye"></i></a></li>
+                                 
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/beng.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Benghazi</h4>
+                            <span>$25.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(12)"><i class="fa fa-eye"></i></a></li>
+                               
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/dive.avif" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>dving course 3 days </h4>
+                            <span>$250.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(11)"><i class="fa fa-eye"></i></a></li>
+                               
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/food.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Make your dishe</h4>
+                            <span>$25</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(8)"><i class="fa fa-eye"></i></a></li>
+                                   
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/gaber.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Gaber owen lake </h4>
+                            <span>$100.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(15)"><i class="fa fa-eye"></i></a></li>
+                                  
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/Sab.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Sabratha</h4>
+                            <span>$35.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#"onclick="openModal(3)" ><i class="fa fa-eye"></i></a></li>
+                                 
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/cyrene.jpeg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Cyrene</h4>
+                            <span>$65.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(8)"><i class="fa fa-eye"></i></a></li>
+                               
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/merd.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Merdith</h4>
+                            <span>$150</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style=" margin-top: 40px;" class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="#" onclick="openModal(13)"><i class="fa fa-eye"></i></a></li>
+                               
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="assets/images/arabic.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Learn Libyan Dialect </h4>
+                            <span>$1000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+
+       
+    </section>
+    <!-- ***** Products Area Ends ***** -->
+</section>
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/logo1.png" alt="zanjabela" width="50" height="50">
+                        </div>
+                        <ul>
+                            <li><a href="#">1s floor tripoli tower, Tripoli - Libya </a></li>
+                            <li><a href="#">contact@zanjbela.com</a></li>
+                            <li><a href="#">09200000</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Trips</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                       
+                        <li><a href="visa.html">FAQ's</a></li>
+                        <li><a href="products.html">Packges</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 zanjabela Co., Ltd. All Rights Reserved. 
+                        
+                       
+                        <ul>
+                            <li><a href="https://www.instagram.com/reel/DAGpQrHO-ru/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://x.com/travel2libya/status/1798422152561226227"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script src="producModel.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+       
+
+
+
+
+
+    </script>
+
+  </body>
+
+</html>
